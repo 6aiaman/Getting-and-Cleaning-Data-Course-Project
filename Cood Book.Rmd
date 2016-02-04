@@ -1,0 +1,106 @@
+#ABOUT THE SCRIPT
+
+The script 'run_analysis.R' does the following functions:
+* First, it merges the training and the test sets by using rbind()
+* I used grep() to find a subset of features, which have "[Mm]ean" or "[Ss]td" in their names.
+* By using gsub(), I renamed some of the column names to make them more descriptive.
+* cbind() was used to combine subject.data("subject") and y.data("activity")
+* colnames() was used to change labels of subject.data and y.data to "subject" and "activity" respectively.
+* aggregate() with mean() was used to find the average of each variable for each activity and each subject.
+
+#ABOUT THE VARIABLES
+
+* `subject` - Test subjects' IDS
+* `activity` - Activity types
+* `tBodyAccMeanX`
+* `tBodyAccMeanY`
+* `tBodyAccMeanZ`
+* `tBodyAccStdX`
+* `tBodyAccStdY`
+* `tBodyAccStdZ`
+* `tGravityAccMeanX`
+* `tGravityAccMeanY`
+* `tGravityAccMeanZ`
+* `tGravityAccStdX`
+* `tGravityAccStdY`
+* `tGravityAccStdZ`
+* `tBodyAccJerkMeanX`
+* `tBodyAccJerkMeanY`
+* `tBodyAccJerkMeanZ`
+* `tBodyAccJerkStdX`
+* `tBodyAccJerkStdY`
+* `tBodyAccJerkStdZ`
+* `tBodyGyroMeanX`
+* `tBodyGyroMeanY`
+* `tBodyGyroMeanZ`
+* `tBodyGyroStdX`
+* `tBodyGyroStdY`
+* `tBodyGyroStdZ`
+* `tBodyGyroJerkMeanX`
+* `tBodyGyroJerkMeanY`
+* `tBodyGyroJerkMeanZ`
+* `tBodyGyroJerkStdX`
+* `tBodyGyroJerkStdY`
+* `tBodyGyroJerkStdZ`
+* `tBodyAccMagMean`
+* `tBodyAccMagStd`
+* `tGravityAccMagMean`
+* `tGravityAccMagStd`
+* `tBodyAccJerkMagMean`
+* `tBodyAccJerkMagStd`
+* `tBodyGyroMagMean`
+* `tBodyGyroMagStd`
+* `tBodyGyroJerkMagMean`
+* `tBodyGyroJerkMagStd`
+* `fBodyAccMeanX`
+* `fBodyAccMeanY`
+* `fBodyAccMeanZ`
+* `fBodyAccStdX`
+* `fBodyAccStdY`
+* `fBodyAccStdZ`
+* `fBodyAccMeanFreqX`
+* `fBodyAccMeanFreqY`
+* `fBodyAccMeanFreqZ`
+* `fBodyAccJerkMeanX`
+* `fBodyAccJerkMeanY`
+* `fBodyAccJerkMeanZ`
+* `fBodyAccJerkStdX`
+* `fBodyAccJerkStdY`
+* `fBodyAccJerkStdZ`
+* `fBodyAccJerkMeanFreqX`
+* `fBodyAccJerkMeanFreqY`
+* `fBodyAccJerkMeanFreqZ`
+* `fBodyGyroMeanX`
+* `fBodyGyroMeanY`
+* `fBodyGyroMeanZ`
+* `fBodyGyroStdX`
+* `fBodyGyroStdY`
+* `fBodyGyroStdZ`
+* `fBodyGyroMeanFreqX`
+* `fBodyGyroMeanFreqY`
+* `fBodyGyroMeanFreqZ`
+* `fBodyAccMagMean`
+* `fBodyAccMagStd`
+* `fBodyAccMagMeanFreq`
+* `fBodyBodyAccJerkMagMean`
+* `fBodyBodyAccJerkMagStd`
+* `fBodyBodyAccJerkMagMeanFreq`
+* `fBodyBodyGyroMagMean`
+* `fBodyBodyGyroMagStd`
+* `fBodyBodyGyroMagMeanFreq`
+* `fBodyBodyGyroJerkMagMean`
+* `fBodyBodyGyroJerkMagStd`
+* `fBodyBodyGyroJerkMagMeanFreq`
+
+
+# ACTIVITY TYPES
+
+* `WALKING` (value `1`): a subject was walking
+* `WALKING_UPSTAIRS` (value `2`): a subject was walking up a staircase
+* `WALKING_DOWNSTAIRS` (value `3`): a subject was walking down a staircase
+* `SITTING` (value `4`): a subject was sitting
+* `STANDING` (value `5`): a subject was standing
+* `LAYING` (value `6`): a subject was laying down
+
+
+
