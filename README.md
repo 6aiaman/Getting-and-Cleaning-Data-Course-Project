@@ -1,9 +1,9 @@
 ## Getting and Cleaning Data Course Project
 #Coursera Data Science Specialization
 
-The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
+The purpose of this project is to demonstrate my ability to collect, work with, and clean a data set.
 
-Review criteria
+run_analysis.R fulfills the following criterias:
 
 1. The submitted data set is tidy.
 2. The Github repo contains the required scripts.
